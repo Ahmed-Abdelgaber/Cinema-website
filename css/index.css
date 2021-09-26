@@ -1,0 +1,471 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#banner {
+    background: linear-gradient(rgba(180, 51, 51, 0.25), #960000ed), url(../images/sec1background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+}
+
+.logo {
+    width: 150px;
+    position: absolute;
+    top: 2%;
+    left: 10%;
+}
+
+.banner-text {
+    text-align: center;
+    color: #ffffff;
+    padding-top: 180px;
+}
+
+.banner-text h1 {
+    font-size: 130px;
+    font-family: cursive;
+}
+
+.banner-text p {
+    font-size: 40px;
+    font-style: italic;
+    font-family: 'Bonheur Royale', cursive;
+}
+
+.banner-btn {
+    margin: 50px auto 0;
+}
+
+.banner-btn a {
+    width: 150px;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: inline-block;
+    margin: 0px 10px;
+    padding: 12px;
+    color: white;
+    border: 0.5px solid white;
+    position: relative;
+    z-index: 1;
+    transition: color 0.5s;
+}
+
+.banner-btn a span {
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.banner-btn a:hover span {
+    width: 100%;
+}
+
+.banner-btn a:hover {
+    color: rgb(53, 0, 0);
+}
+
+#sidenav {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    right: -250px;
+    top: 0;
+    background: #960000ed;
+    z-index: 2;
+    transition: 0.5s;
+}
+
+.nav ul li {
+    list-style: none;
+    margin: 50px 20px;
+    display: flex;
+}
+
+.nav a {
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+}
+
+#menu-btn {
+    width: 50px;
+    height: 50px;
+    background: #960000ed;
+    text-align: center;
+    position: fixed;
+    right: 30px;
+    top: 20px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+
+#open {
+    width: 30px;
+    margin-top: 15;
+    padding: 10px;
+}
+
+.nav a span {
+    width: 0%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: white;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.nav a:hover span {
+    width: 100%;
+}
+
+.nav a:hover {
+    color: rgb(53, 0, 0);
+    font-size: 20px;
+    border: 3px solid;
+    padding: 10px;
+}
+
+
+/* features */
+
+#features {
+    width: 100%;
+    padding: 70px 0;
+    position: relative;
+}
+
+.titel-text {
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+.titel-text p {
+    margin: auto;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: #960000ed;
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+
+.titel-text p::after {
+    content: '';
+    width: 50px;
+    height: 30px;
+    background: linear-gradient(#960000ed, #ffffff);
+    top: -20px;
+    left: 0;
+    z-index: -1;
+    transform: rotate(10deg);
+    position: absolute;
+    border-top-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+}
+
+.titel-text h1 {
+    font-size: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.feature-row {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.feature-left,
+.feature-right {
+    margin-bottom: 20px;
+    padding: 10px;
+    flex-basis: 45%;
+    position: relative;
+}
+
+.feature-right img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.overlay-f {
+    width: 96%;
+    height: 90%;
+    position: absolute;
+    bottom: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    background: linear-gradient(rgba(180, 51, 51, 0.25), #960000ed);
+    opacity: 0.5;
+}
+
+.feature-left {
+    margin-left: 20px;
+}
+
+.single-feature {
+    margin: 10px auto;
+    padding: 10px;
+    box-shadow: 0 10px 20px 3px rgb(189, 188, 188);
+    border-radius: 10px;
+}
+
+.single-feature .fa {
+    font-size: 10px;
+    margin: auto 5px;
+    color: #960000ed;
+}
+
+.single-feature h1 {
+    margin-bottom: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #960000ed;
+}
+
+.single-feature p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #960000ed;
+}
+
+
+/* films */
+
+#films {
+    width: 100%;
+    padding: 70px 0;
+    background: #faeded;
+}
+
+.films-box {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.single-film {
+    flex-basis: 48%;
+    text-align: center;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    color: white;
+    position: relative;
+}
+
+.single-film img {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    border-radius: 10px;
+    cursor: pointer;
+    background: linear-gradient(rgba(180, 51, 51, 0.25), #960000ed);
+    opacity: 0;
+    transition: 1s;
+}
+
+.single-film:hover .overlay {
+    opacity: 1;
+}
+
+.film-desc {
+    width: 80%;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: 1s;
+}
+
+.film-desc hr {
+    height: 1px;
+    background: white;
+    border: 0;
+    margin: 15px auto;
+}
+
+.film-desc h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 40px;
+}
+
+.film-desc p {
+    font-size: 22px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.single-film:hover .film-desc {
+    bottom: 40%;
+    opacity: 1;
+}
+
+
+/* testimonial */
+
+#testimonial {
+    width: 100%;
+    padding: 70px 0;
+}
+
+.testimonial-row {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.testimonial-col {
+    flex-basis: 30%;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px 3px rgb(189, 188, 188);
+    cursor: pointer;
+    transition: .75s;
+}
+
+.testimonial-col p {
+    margin-top: 2px;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.user {
+    margin: 3px 0;
+    display: flex;
+    align-items: center;
+}
+
+.user img {
+    width: 15%;
+    margin-right: 20px;
+    border-radius: 3px;
+}
+
+.user-info .fa {
+    margin: 5px;
+    color: #27c0ff;
+    font-size: 20px
+}
+
+.user-info h4 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: -9px;
+}
+
+.user-info small {
+    color: #009688;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.testimonial-col:hover {
+    transform: translateY(-7px);
+}
+
+
+/* footer */
+
+#footer {
+    width: 100%;
+    background: #faeded;
+    padding: 70px 0;
+    position: relative;
+}
+
+.footer-row {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+
+.footer-right,
+.footer-left {
+    margin-bottom: 20px;
+    padding: 10px;
+    flex-basis: 45%;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.footer-row h1 {
+    margin: 10px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.footer-row p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 35px;
+}
+
+.footer-right .fa,
+.footer-left .fa {
+    margin: 0 5px;
+    color: #960000ed;
+}
+
+.footer-img {
+    width: 20%;
+    position: absolute;
+    opacity: .1;
+    left: 40%;
+    top: 2%;
+}
+
+.social-links {
+    text-align: center;
+}
+
+.social-links .fa {
+    color: #960000ed;
+    font-size: 25px;
+    margin: 0 10px;
+    border: #960000ed solid 1px;
+    border-radius: 30px;
+    padding: 7px;
+    cursor: pointer;
+    transition: .75s;
+}
+
+.social-links .fa:hover {
+    background: #960000ed;
+    color: #faeded;
+    transform: translateY(-7px);
+}
+
+.social-links p {
+    margin-top: 10px;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* should be deleted */
